@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        tools:src="@drawable/ic_audiotrack_black_24dp"/>
+
+    <RelativeLayout
+        android:id="@+id/text_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/iv_cover"
+        android:layout_toLeftOf="@+id/iv_play_song"
+        android:paddingTop="20dp"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/tv_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp"
+            tools:text="Afreen Afreen"/>
+
+        <TextView
+            android:id="@+id/tv_artists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_song"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="14sp"
+            tools:text="Rahat Fateh Ali Khan, Momina Mustehsan"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_play_song"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_play_arrow_black_24dp"/>
+
+
+</RelativeLayout>

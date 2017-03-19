@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CokeStudio</string>
+    <string name="no_internet">No Internet Connectivity.</string>
+    <string name="no_data_fetched">No Data Fetched</string>
+    <string name="favourite">Mark as Favourite</string>
+    <string name="download">Download the song</string>
+</resources>
